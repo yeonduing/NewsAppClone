@@ -12,11 +12,12 @@ final class TabBarController: UITabBarController {
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
+    setupStyle()
+
     let topStoriesViewController: TopStoriesViewController = .init()
 
     let topStoriesNavViewController: UINavigationController = .init(rootViewController: topStoriesViewController)
     topStoriesViewController.navigationItem.title = "The Wasingthon Post"
-    topStoriesNavViewController.navigationBar.prefersLargeTitles = true
     topStoriesNavViewController.tabBarItem.title = "Top Stories"
     topStoriesNavViewController.tabBarItem.image = .init(systemName: "house")
     topStoriesNavViewController.tabBarItem.tag = 0
@@ -29,3 +30,13 @@ final class TabBarController: UITabBarController {
   }
 }
 
+private extension TabBarController {
+
+  func setupStyle() {
+    let appearance = UITabBarAppearance()
+    appearance.configureWithOpaqueBackground()
+    appearance.backgroundColor = .background
+    tabBar.standardAppearance = appearance
+    tabBar.scrollEdgeAppearance = tabBar.standardAppearance
+  }
+}
