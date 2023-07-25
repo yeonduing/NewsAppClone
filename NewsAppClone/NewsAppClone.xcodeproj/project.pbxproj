@@ -17,6 +17,7 @@
 		E281F8AB2A6EC1BB007486D3 /* NewsAppCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8AA2A6EC1BB007486D3 /* NewsAppCloneUITestsLaunchTests.swift */; };
 		E281F8B82A6EC900007486D3 /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8B72A6EC900007486D3 /* TopStoriesViewController.swift */; };
 		E281F8BA2A6ECBB0007486D3 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8B92A6ECBB0007486D3 /* UIColor+.swift */; };
+		E281F8BC2A6FB3E4007486D3 /* TopStoriesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8BB2A6FB3E4007486D3 /* TopStoriesPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E281F8AA2A6EC1BB007486D3 /* NewsAppCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E281F8B72A6EC900007486D3 /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
 		E281F8B92A6ECBB0007486D3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		E281F8BB2A6FB3E4007486D3 /* TopStoriesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E281F8892A6EC1BA007486D3 /* SceneDelegate.swift */,
 				E281F88B2A6EC1BA007486D3 /* TabBarController.swift */,
 				E281F8B72A6EC900007486D3 /* TopStoriesViewController.swift */,
+				E281F8BB2A6FB3E4007486D3 /* TopStoriesPageViewController.swift */,
 				E281F8902A6EC1BB007486D3 /* Assets.xcassets */,
 				E281F8922A6EC1BB007486D3 /* LaunchScreen.storyboard */,
 				E281F8952A6EC1BB007486D3 /* Info.plist */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E281F8B82A6EC900007486D3 /* TopStoriesViewController.swift in Sources */,
+				E281F8BC2A6FB3E4007486D3 /* TopStoriesPageViewController.swift in Sources */,
 				E281F88C2A6EC1BA007486D3 /* TabBarController.swift in Sources */,
 				E281F8882A6EC1BA007486D3 /* AppDelegate.swift in Sources */,
 				E281F88A2A6EC1BA007486D3 /* SceneDelegate.swift in Sources */,
