@@ -15,14 +15,11 @@ final class TabBarController: UITabBarController {
     setupStyle()
 
     let topStoriesPageViewController: TopStoriesPageViewController = .init(pages: [TopStoriesViewController(), ForYouViewController()])
-
-    let topStoriesNavViewController: UINavigationController = .init(rootViewController: topStoriesPageViewController)
     topStoriesPageViewController.navigationItem.title = "The Wasingthon Post"
-    topStoriesNavViewController.tabBarItem.title = "Top Stories"
-    topStoriesNavViewController.tabBarItem.image = .init(systemName: "house")
-    topStoriesNavViewController.tabBarItem.tag = 0
 
-    viewControllers = [topStoriesNavViewController]
+    let topStoriesNavigationController: TopStoriesNavigationController = .init(rootViewController: topStoriesPageViewController)
+
+    viewControllers = [topStoriesNavigationController]
   }
 
   required init?(coder: NSCoder) {
