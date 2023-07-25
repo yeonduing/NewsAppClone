@@ -28,6 +28,7 @@ final class TopStoriesPageViewController: UIPageViewController {
 private extension TopStoriesPageViewController {
 
   func setupStyle() {
+    delegate = self
     dataSource = self
 
     if let firstViewController = pages.first {
@@ -38,6 +39,10 @@ private extension TopStoriesPageViewController {
   func setupLayout() {
 
   }
+}
+
+extension TopStoriesPageViewController: UIPageViewControllerDelegate {
+
 }
 
 extension TopStoriesPageViewController: UIPageViewControllerDataSource {
