@@ -10,6 +10,7 @@ import UIKit
 final class TopStoriesPageButtonCell: UICollectionViewCell {
 
   private let label: UILabel = .init()
+  private let line: UIView = .init()
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -26,16 +27,28 @@ final class TopStoriesPageButtonCell: UICollectionViewCell {
 private extension TopStoriesPageButtonCell {
 
   func setupStyle() {
-    label.text = "title"
+    label.text = "title title title"
+    label.textColor = .primary
+
+    line.backgroundColor = .primary
   }
 
   func setupLayout() {
-    contentView.addSubview(label)
-    label.translatesAutoresizingMaskIntoConstraints = false
+    [label, line].forEach {
+      contentView.addSubview($0)
+      $0.translatesAutoresizingMaskIntoConstraints = false
+    }
 
     NSLayoutConstraint.activate([
-      label.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-      label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+      label.topAnchor.constraint(equalTo: contentView.topAnchor),
+      label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+      label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+
+      line.heightAnchor.constraint(equalToConstant: 1),
+      line.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 4),
+      line.leadingAnchor.constraint(equalTo: label.leadingAnchor),
+      line.trailingAnchor.constraint(equalTo: label.trailingAnchor),
+      line.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
     ])
   }
 }
