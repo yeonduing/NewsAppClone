@@ -9,13 +9,14 @@ import UIKit
 
 final class TopStoriesNavigationController: UINavigationController {
 
-  private let pageCollectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+  private let pageCollectionView: TopStoriesPageCollectionView = .init()
 
   override init(rootViewController: UIViewController) {
     super.init(rootViewController: rootViewController)
 
     setupStyle()
     setupLayout()
+    setupCollectionView()
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -39,26 +40,18 @@ private extension TopStoriesNavigationController {
       pageCollectionView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor),
       pageCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       pageCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-      pageCollectionView.heightAnchor.constraint(equalToConstant: 40)
+      pageCollectionView.heightAnchor.constraint(equalToConstant: 25.33)
     ])
   }
 
   func setupCollectionView() {
     pageCollectionView.delegate = self
     pageCollectionView.dataSource = self
-    pageCollectionView.registerCell(ofType: TopStoriesPageButtonCell.self)
   }
 }
 
 extension TopStoriesNavigationController: UICollectionViewDelegateFlowLayout {
 
-  func collectionView(
-    _ collectionView: UICollectionView,
-    layout collectionViewLayout: UICollectionViewLayout,
-    sizeForItemAt indexPath: IndexPath
-  ) -> CGSize {
-    .init(width: 80, height: 40)
-  }
 }
 
 extension TopStoriesNavigationController: UICollectionViewDataSource {

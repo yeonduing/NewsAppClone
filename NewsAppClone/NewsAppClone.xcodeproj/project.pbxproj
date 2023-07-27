@@ -22,6 +22,7 @@
 		E281F8C02A6FC661007486D3 /* TopStoriesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8BF2A6FC661007486D3 /* TopStoriesNavigationController.swift */; };
 		E281F8C22A6FC89C007486D3 /* TopStoriesPageButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8C12A6FC89C007486D3 /* TopStoriesPageButtonCell.swift */; };
 		E281F8C42A6FC94D007486D3 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8C32A6FC94D007486D3 /* UICollectionView+.swift */; };
+		E281F8C82A6FCE53007486D3 /* TopStoriesPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281F8C72A6FCE53007486D3 /* TopStoriesPageCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +59,10 @@
 		E281F8B92A6ECBB0007486D3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		E281F8BB2A6FB3E4007486D3 /* TopStoriesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesPageViewController.swift; sourceTree = "<group>"; };
 		E281F8BD2A6FBEC8007486D3 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
-		E281F8BF2A6FC661007486D3 /* TopStoriesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesNavigationController.swift; sourceTree = "<group>"; };
+		E281F8BF2A6FC661007486D3 /* TopStoriesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 1; path = TopStoriesNavigationController.swift; sourceTree = "<group>"; };
 		E281F8C12A6FC89C007486D3 /* TopStoriesPageButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesPageButtonCell.swift; sourceTree = "<group>"; };
 		E281F8C32A6FC94D007486D3 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		E281F8C72A6FCE53007486D3 /* TopStoriesPageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesPageCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				E281F8B72A6EC900007486D3 /* TopStoriesViewController.swift */,
 				E281F8BB2A6FB3E4007486D3 /* TopStoriesPageViewController.swift */,
 				E281F8C12A6FC89C007486D3 /* TopStoriesPageButtonCell.swift */,
+				E281F8C72A6FCE53007486D3 /* TopStoriesPageCollectionView.swift */,
 				E281F8BF2A6FC661007486D3 /* TopStoriesNavigationController.swift */,
 			);
 			path = TopStories;
@@ -296,6 +299,7 @@
 				E281F8C22A6FC89C007486D3 /* TopStoriesPageButtonCell.swift in Sources */,
 				E281F88C2A6EC1BA007486D3 /* TabBarController.swift in Sources */,
 				E281F8C42A6FC94D007486D3 /* UICollectionView+.swift in Sources */,
+				E281F8C82A6FCE53007486D3 /* TopStoriesPageCollectionView.swift in Sources */,
 				E281F8BE2A6FBEC8007486D3 /* ForYouViewController.swift in Sources */,
 				E281F8C02A6FC661007486D3 /* TopStoriesNavigationController.swift in Sources */,
 				E281F8882A6EC1BA007486D3 /* AppDelegate.swift in Sources */,
